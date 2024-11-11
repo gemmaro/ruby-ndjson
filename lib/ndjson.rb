@@ -12,7 +12,7 @@ module NDJSON
       end
     end
 
-    def each &block
+    def each
       @input.each do |line|
         json_line = JSON.parse(line)
         yield json_line
